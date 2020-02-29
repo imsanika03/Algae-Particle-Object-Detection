@@ -133,8 +133,8 @@ if __name__ == "__main__":
     parser.add_argument(
         "--epochs",
         type=float,
-        default=51,
-        help="Number of epochs for training last layers and number of epochs for fine-tuning layers. Default is 51.",
+        default=6,
+        help="Number of epochs for training last layers and number of epochs for fine-tuning layers. Default is 6.",
     )
 
     FLAGS = parser.parse_args()
@@ -165,14 +165,14 @@ if __name__ == "__main__":
     logging = TensorBoard(log_dir=log_dir_time)
     checkpoint = ModelCheckpoint(
         os.path.join(log_dir, "checkpoint.h5"),
-        monitor="val_loss",
+        monitor="val_acc",
         save_weights_only=True,
         save_best_only=True,
         period=5,
     )
-    reduce_lr = ReduceLROnPlateau(monitor="val_loss", factor=0.1, patience=3, verbose=1)
+    reduce_lr = ReduceLROnPlateau(monitor="val_acc", factor=0.1, patience=3, verbose=1)
     early_stopping = EarlyStopping(
-        monitor="val_loss", min_delta=0, patience=10, verbose=1
+        monitor="val_acc", min_delta=0, patience=10, verbose=1
     )
 
     val_split = FLAGS.val_split
