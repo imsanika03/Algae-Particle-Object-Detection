@@ -133,8 +133,8 @@ if __name__ == "__main__":
     parser.add_argument(
         "--epochs",
         type=float,
-        default=6,
-        help="Number of epochs for training last layers and number of epochs for fine-tuning layers. Default is 6.",
+        default=2,
+        help="Number of epochs for training last layers and number of epochs for fine-tuning layers. Default is 2.",
     )
 
     FLAGS = parser.parse_args()
@@ -216,6 +216,9 @@ if __name__ == "__main__":
             initial_epoch=0,
             callbacks=[logging, checkpoint],
         )
+        for key in hist.history:
+            print(key)
+            
         model.save_weights(os.path.join(log_dir, "trained_weights_stage_1.h5"))
 
         step1_train_loss = history.history["loss"]
