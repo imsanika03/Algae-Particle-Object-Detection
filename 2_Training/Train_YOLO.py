@@ -216,7 +216,7 @@ if __name__ == "__main__":
             initial_epoch=0,
             callbacks=[logging, checkpoint],
         )
-        for key in hist.history:
+        for key in history.history:
             print(key)
             
         model.save_weights(os.path.join(log_dir, "trained_weights_stage_1.h5"))
