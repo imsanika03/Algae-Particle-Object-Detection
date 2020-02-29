@@ -229,7 +229,7 @@ if __name__ == "__main__":
                 f.write("%s\n" % item)
         file.close()
 
-        step1_val_loss = np.array(history.history["val_loss"])
+        step1_val_loss = np.array(history.history["loss"])
 
         file = open(os.path.join(log_dir_time, "step1_val_loss.npy"), "w")
         with open(os.path.join(log_dir_time, "step1_val_loss.npy"), "w") as f:
