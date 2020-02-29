@@ -165,14 +165,14 @@ if __name__ == "__main__":
     logging = TensorBoard(log_dir=log_dir_time)
     checkpoint = ModelCheckpoint(
         os.path.join(log_dir, "checkpoint.h5"),
-        monitor="val_acc",
+        monitor="loss",
         save_weights_only=True,
         save_best_only=True,
         period=5,
     )
-    reduce_lr = ReduceLROnPlateau(monitor="val_acc", factor=0.1, patience=3, verbose=1)
+    reduce_lr = ReduceLROnPlateau(monitor="loss", factor=0.1, patience=3, verbose=1)
     early_stopping = EarlyStopping(
-        monitor="val_acc", min_delta=0, patience=10, verbose=1
+        monitor="loss", min_delta=0, patience=10, verbose=1
     )
 
     val_split = FLAGS.val_split
@@ -277,7 +277,7 @@ if __name__ == "__main__":
                 f.write("%s\n" % item)
         file.close()
 
-        step2_val_loss = np.array(history.history["val_loss"])
+        step2_val_loss = np.array(history.history["loss"])
 
         file = open(os.path.join(log_dir_time, "step2_val_loss.npy"), "w")
         with open(os.path.join(log_dir_time, "step2_val_loss.npy"), "w") as f:
