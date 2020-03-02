@@ -1,8 +1,0 @@
-C:\yolo\TrainYourOwnYOLO\Data\Source_Images\Training_Images\vott-csv-export\2Q__%2520(1).jpg 30,15,112,94,0
-C:\yolo\TrainYourOwnYOLO\Data\Source_Images\Training_Images\vott-csv-export\2Q__%2520(2).jpg 82,1,198,122,0
-C:\yolo\TrainYourOwnYOLO\Data\Source_Images\Training_Images\vott-csv-export\2Q__.jpg 5,4,104,104,0
-C:\yolo\TrainYourOwnYOLO\Data\Source_Images\Training_Images\vott-csv-export\9k_%2520(2).jpg 59,6,181,127,0
-C:\yolo\TrainYourOwnYOLO\Data\Source_Images\Training_Images\vott-csv-export\9k_%2520(1).jpg 70,3,237,141,0
-C:\yolo\TrainYourOwnYOLO\Data\Source_Images\Training_Images\vott-csv-export\9k_%2520(4).jpg 95,27,159,94,0
-C:\yolo\TrainYourOwnYOLO\Data\Source_Images\Training_Images\vott-csv-export\9k_%2520(3).jpg 69,47,183,155,0
-C:\yolo\TrainYourOwnYOLO\Data\Source_Images\Training_Images\vott-csv-export\9k_%2520(5).jpg 133,10,270,139,0
