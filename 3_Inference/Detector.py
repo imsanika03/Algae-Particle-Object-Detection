@@ -151,6 +151,7 @@ if __name__ == "__main__":
         print("Found input path")
         input_paths = GetFileList(FLAGS.input_path, endings=file_types)
     else:
+        print("Found input path")
         input_paths = GetFileList(FLAGS.input_path)
 
     # Split images and videos
@@ -159,6 +160,7 @@ if __name__ == "__main__":
 
     input_image_paths = []
     input_video_paths = []
+    print("Looking for images")
     for item in input_paths:
         if item.endswith(img_endings):
             print("Found images")
@@ -203,8 +205,7 @@ if __name__ == "__main__":
     input_labels = [line.rstrip("\n") for line in class_file.readlines()]
     print("Found {} input labels: {} ...".format(len(input_labels), input_labels))
     
-    if !input_image_paths:
-        print("No Images found!")
+   
 
     if input_image_paths:
         print(
