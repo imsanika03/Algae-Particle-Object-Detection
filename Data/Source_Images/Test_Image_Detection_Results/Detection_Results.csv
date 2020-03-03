@@ -1,2 +1,7 @@
 image,image_path,xmin,ymin,xmax,ymax,label,confidence,x_size,y_size
+T1R_190625_WB4_LP3_3.1.jpg,/home/imsanika03/TrainYourOwnYOLO/Data/Source_Images/Test_Images/T1R_190625_WB4_LP3_3.1.jpg,2717,2336,3146,3164,0,0.27642959356307983,6000,4000
+T1R_190625_WB4_LP3_3.1.jpg,/home/imsanika03/TrainYourOwnYOLO/Data/Source_Images/Test_Images/T1R_190625_WB4_LP3_3.1.jpg,1700,948,2115,1835,0,0.3335210084915161,6000,4000
+T1R_190625_WB4_LP3_3.1.jpg,/home/imsanika03/TrainYourOwnYOLO/Data/Source_Images/Test_Images/T1R_190625_WB4_LP3_3.1.jpg,3159,1876,3570,2717,0,0.3849533200263977,6000,4000
+T1R_190625_WB4_LP3_3.1.jpg,/home/imsanika03/TrainYourOwnYOLO/Data/Source_Images/Test_Images/T1R_190625_WB4_LP3_3.1.jpg,1853,2700,2415,3342,0,0.4057120084762573,6000,4000
 T1B_190701_WB4_LP3_4.3.jpg,/home/imsanika03/TrainYourOwnYOLO/Data/Source_Images/Test_Images/T1B_190701_WB4_LP3_4.3.jpg,1363,1141,1980,2597,0,0.40948665142059326,6000,4000
+T1R_190625_WB4_LP3_3.6.jpg,/home/imsanika03/TrainYourOwnYOLO/Data/Source_Images/Test_Images/T1R_190625_WB4_LP3_3.6.jpg,4097,2686,4424,3377,0,0.38044536113739014,6000,4000
