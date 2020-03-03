@@ -148,6 +148,7 @@ if __name__ == "__main__":
     file_types = FLAGS.file_types
 
     if file_types:
+        print("Found input path")
         input_paths = GetFileList(FLAGS.input_path, endings=file_types)
     else:
         input_paths = GetFileList(FLAGS.input_path)
@@ -160,6 +161,7 @@ if __name__ == "__main__":
     input_video_paths = []
     for item in input_paths:
         if item.endswith(img_endings):
+            print("Found images")
             input_image_paths.append(item)
         elif item.endswith(vid_endings):
             input_video_paths.append(item)
