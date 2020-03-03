@@ -1,0 +1,2 @@
+image,image_path,xmin,ymin,xmax,ymax,label,confidence,x_size,y_size
+T1B_190701_WB4_LP3_4.3.jpg,/home/imsanika03/TrainYourOwnYOLO/Data/Source_Images/Test_Images/T1B_190701_WB4_LP3_4.3.jpg,1363,1141,1980,2597,0,0.40948665142059326,6000,4000
