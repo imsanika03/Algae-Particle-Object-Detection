@@ -202,6 +202,9 @@ if __name__ == "__main__":
     class_file = open(FLAGS.classes_path, "r")
     input_labels = [line.rstrip("\n") for line in class_file.readlines()]
     print("Found {} input labels: {} ...".format(len(input_labels), input_labels))
+    
+    if !input_image_paths:
+        print("No Images found!")
 
     if input_image_paths:
         print(
